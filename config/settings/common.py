@@ -39,12 +39,15 @@ THIRD_PARTY_APPS = (
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+    'rest_framework', # api
 )
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'predict_it.users',  # custom users app
     # Your stuff: custom apps go here
+    'predict_it.api',
+    'predict_it.predictions'
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
