@@ -8,5 +8,5 @@ prediction_urls = [
 ]
 
 urlpatterns = [
-    url(r'^predictions', include(prediction_urls)),
+    url(r'^predictions/', include(prediction_urls)),
 ]

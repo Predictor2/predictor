@@ -5,7 +5,7 @@ from .serializers import PredictionSerializer
 
 
 class PredictionList(generics.ListAPIView):
-    model = Prediction
+    queryset = Prediction.objects.all()
     serializer_class = PredictionSerializer
     permission_classes = [
         permissions.AllowAny
