@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
 
+
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, include(admin.site.urls)),
 
@@ -21,6 +22,7 @@ urlpatterns = [
 
     # Your stuff: custom urls includes go here
     url(r'^api/', include("predict_it.api.urls", namespace="api")),
+    url(r'^home/$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
