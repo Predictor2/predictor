@@ -10,7 +10,8 @@
    Answers
    <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ng-repeat="response in responses">
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li ng-repeat="response in responses" class='list-group-item'>{{prediction.response}}</li>
  </ul>
 </div>
 
