@@ -1,0 +1,14 @@
+<div class='row text-center'>
+  <div class='col-sm-4 col-sm-offset-4'>
+    <h1>All predictions</h1>
+
+
+    <ul class="list-group">
+      <li ng-repeat='prediction in predictions' class="list-group-item">
+        <input type="checkbox" ng-checked="prediction.is_completed" ng-change="toggleCompleted(prediction)" ng-model='prediction.is_completed'>  {{prediction.question}}
+
+        <span class='badge' ng-click="deleteprediction(prediction.id)">X</span>
+      </li>
+    </ul>
+  </div>
+</div>
