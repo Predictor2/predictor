@@ -3,6 +3,6 @@ from predict_it.predictions.models import Prediction
 
 
 class PredictionAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('question', 'created', 'modified')
 
 admin.site.register(Prediction, PredictionAdmin)
