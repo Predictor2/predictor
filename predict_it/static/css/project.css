@@ -29,6 +29,15 @@
   }
 }
 
+div.col-sm-12.col-sm-offset-2 {
+  text-align: center;
+  width: 500px;
+}
+
+li.list-group-item.ng-binding.ng-scope {
+  text-align: center;
+  width: 500px;
+}
 /* Display django-debug-toolbar.
    See https://github.com/django-debug-toolbar/django-debug-toolbar/issues/742
    and https://github.com/pydanny/cookiecutter-django/issues/317
