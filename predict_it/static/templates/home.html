@@ -5,9 +5,8 @@
 
     <ul class="list-group">
       <li ng-repeat='prediction in predictions' class="list-group-item">
-        <input type="checkbox" ng-checked="prediction.is_completed" ng-change="toggleCompleted(prediction)" ng-model='prediction.is_completed'>  {{prediction.question}}
+        {{prediction.question}}
 
-        <span class='badge' ng-click="deleteprediction(prediction.id)">X</span>
       </li>
     </ul>
   </div>
