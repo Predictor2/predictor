@@ -11,7 +11,7 @@
     .module('app.predictions.controllers', []);
 
   angular
-    .module('app.predictions.directives', ['ngDialog']);
+    .module('app.predictions.directives', []);
 
   angular
     .module('app.predictions.services', []);
