@@ -12,14 +12,13 @@ app.config(function($stateProvider, $urlRouterProvider){
       templateUrl: '/static/templates/home.html',
       controller: 'MainCtrl'
     });
-
   $urlRouterProvider.otherwise('/');
 });
 
 app.controller('MainCtrl', function($scope, Predictions, $state){
 
   Predictions.all().then(function(res){
-    $scope.Predictions = res.data;
+    $scope.predictions = res.data;
   });
 });
 
