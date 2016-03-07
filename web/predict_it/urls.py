@@ -17,15 +17,15 @@ urlpatterns = [
     url(settings.ADMIN_URL, include(admin.site.urls)),
 
     # User management
-    url(r'^users/', include("predict_it.users.urls", namespace="users")),
+    url(r'^users/', include("users.urls", namespace="users")),
     url(r'^accounts/', include('allauth.urls')),
 
     # Your stuff: custom urls includes go here
-    url(r'^api/', include("predict_it.api.urls", namespace="api")),
+    url(r'^api/', include("api.urls", namespace="api")),
     url(r'^home/$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
 
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit

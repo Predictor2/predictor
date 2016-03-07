@@ -219,7 +219,7 @@ Local settings
 
 # DEBUG
 # ------------------------------------------------------------------------------
-DEBUG = os.environ.get('DJANGO_DEBUG', False)
+DEBUG = os.environ.get('DJANGO_DEBUG', True)
 TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 
 # SECRET CONFIGURATION

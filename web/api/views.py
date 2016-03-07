@@ -1,6 +1,7 @@
 from rest_framework import generics, permissions
 
-from ..predictions.models import Prediction
+from predictions.models import Prediction
+
 from .serializers import PredictionSerializer
 
 

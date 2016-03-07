@@ -2,6 +2,7 @@
 django==1.9.1
 
 gunicorn==19.3.0
+ipython
 
 # Configuration
 django-secure==1.0.1

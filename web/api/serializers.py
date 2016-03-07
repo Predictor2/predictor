@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ..predictions.models import Prediction, Response
+from predictions.models import Prediction, Response
 
 
 class ResponseSerializer(serializers.ModelSerializer):
