@@ -1,0 +1,23 @@
+<div class='row text-center'>
+  <div class='col-sm-12 col-sm-offset-2'>
+    <h1>All predictions</h1>
+    <ul class="list-group">
+      <li ng-repeat='prediction in predictions' class="list-group-item">
+  {{prediction.question}}
+
+
+
+        <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   Answers
+   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li ng-repeat="response in prediction.responses" class='list-group-item'>{{response}}</li>
+ </ul>
+</div>
+
+      </li>
+    </ul>
+  </div>
+</div>
