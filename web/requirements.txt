@@ -16,11 +16,6 @@ django-floppyforms==1.6.0
 # Models
 django-model-utils==2.4
 
-# For user registration, either via email or social
-# Well-built with regular release cycles!
-django-allauth==0.24.1
-
-
 # Python-PostgreSQL Database Adapter
 psycopg2==2.6.1
 
@@ -34,7 +29,6 @@ pytz==2015.7
 # Redis support
 django-redis==4.3.0
 redis>=2.10.0
-
 
 # Your custom requirements go here
 djangorestframework==3.3.2
